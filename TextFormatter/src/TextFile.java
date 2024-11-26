@@ -14,5 +14,5 @@ public class TextFile {
 
     public TextFile(ArrayList<String> data) { fileContent = data; }
 
-    public void printFormatted() { format.format(fileContent); }
+    public void printFormatted() { format.format(String.valueOf(fileContent)); }
 }

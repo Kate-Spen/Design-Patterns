@@ -1,10 +1,9 @@
-import java.util.ArrayList;
 import java.util.Random;
 
 public class MarkdownFormat implements IFormat{
 
     @Override
-    public void format(ArrayList<String> data){
+    public String format(String data){
         String[] options = {"**", "***", "<sub>", "~~", "_" };
         Random rng = new Random();
         System.out.println("#" + data.get(0));
@@ -13,5 +12,6 @@ public class MarkdownFormat implements IFormat{
             String option = options[number];
             System.out.println(option + data.get(i)+ option);
         }
+        return data;
     }
 }
