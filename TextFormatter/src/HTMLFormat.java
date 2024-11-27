@@ -1,7 +1,9 @@
+import java.util.ArrayList;
+
 public class HTMLFormat implements IFormat{
 
     @Override
-    public String format(String data){
+    public void format(ArrayList<String> data){
         System.out.println("<html dir=\"ltr\" lang=\"en\">");
         System.out.println("<head>");
 
@@ -10,6 +12,5 @@ public class HTMLFormat implements IFormat{
         }
         System.out.println("</head>");
         System.out.println("</html>");
-        return data;
     }
 }

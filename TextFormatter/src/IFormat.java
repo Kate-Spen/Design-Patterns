@@ -1,4 +1,5 @@
-public interface IFormat {
+import java.util.ArrayList;
 
-    public String format(String data);
+public interface IFormat {
+    public void format(ArrayList<String> data);
 }
